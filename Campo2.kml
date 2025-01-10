@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="1NpD5d_ixJQ-E9_IRGEGxeO-cVYUo46Oq">
+	<name>Campo2</name>
+	<gx:CascadingStyle kml:id="__managed_style_45590A5D4E34CD4404F1">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff007cf5</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_397CA8F65034CD4404F1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_45590A5D4E34CD4404F1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_51CBA541B134CD4404F1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_2EE43DE1F334CD4404F1">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ffd27619</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_12A02D442A34CD4404F1">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ffd27619</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_5BAB3E76E634CD4404F0">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_4B791F4EAB34CD4404F0">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_51CBA541B134CD4404F1">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff007cf5</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_035F2586B734CD4404F1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_12A02D442A34CD4404F1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2EE43DE1F334CD4404F1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_3032342C9434CD4404F0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_4B791F4EAB34CD4404F0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_5BAB3E76E634CD4404F0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="095EC4873F343840520F">
+		<name>Deficiencia</name>
+		<LookAt>
+			<longitude>-73.03500538287096</longitude>
+			<latitude>-13.88185740512945</latitude>
+			<altitude>2159.770623145744</altitude>
+			<heading>7.878208283509291</heading>
+			<tilt>41.50991114383086</tilt>
+			<gx:fovy>30.00000007049064</gx:fovy>
+			<range>189.5705702115265</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3032342C9434CD4404F0</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-73.03471983319025,-13.88206205757242,0 -73.03489693849291,-13.88187160177844,0 -73.03511277610211,-13.8821522027108,0 -73.03492821913258,-13.88236383099454,0 -73.03471983319025,-13.88206205757242,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="0DE77B7EE5343842ABCC">
+		<name>Control</name>
+		<LookAt>
+			<longitude>-73.0351256645711</longitude>
+			<latitude>-13.8819263383624</latitude>
+			<altitude>2160.202224177045</altitude>
+			<heading>7.878196896072287</heading>
+			<tilt>41.50976873366209</tilt>
+			<gx:fovy>30.00000007049064</gx:fovy>
+			<range>165.6685897501666</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_035F2586B734CD4404F1</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-73.03504658329899,-13.88168964244649,0 -73.03530065711786,-13.88196230069623,0 -73.03512153358365,-13.88215522306634,0 -73.03490203562556,-13.88186474104947,0 -73.03504658329899,-13.88168964244649,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="086DA4AB393438443977">
+		<name>Exeso</name>
+		<LookAt>
+			<longitude>-73.03531294810603</longitude>
+			<latitude>-13.88175419312859</latitude>
+			<altitude>2167.030722921265</altitude>
+			<heading>12.35451718720127</heading>
+			<tilt>44.66357750001497</tilt>
+			<gx:fovy>30.00000007049064</gx:fovy>
+			<range>104.909208356512</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_397CA8F65034CD4404F1</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-73.0354924814331,-13.88173973174469,0 -73.0353025681094,-13.88194720681832,0 -73.03505029398958,-13.88168158796451,0 -73.03520633228052,-13.88153970030445,0 -73.0354924814331,-13.88173973174469,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
