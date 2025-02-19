@@ -1,1 +1,6 @@
 data/
+datasets/
+runs/
+*.pt
+prediction-1024px/
+prediction/
