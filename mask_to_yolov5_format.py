@@ -55,18 +55,23 @@ def gen_slicing_images_yolo_format(im_paths, save_dir, split_name = "train", sli
         #cv2.resizeWindow("Image", 600, 400)  # Ancho y alto deseados
         #cv2.waitKey(0)
         #cv2.destroyAllWindows()
-        
+        overlap = 300
+        step = slice_w - overlap
         height, width = im.shape[:2]
-        n_h = height // slice_h + 1
-        n_w = width // slice_w + 1
-        im_padded = np.zeros((n_h * slice_h, n_w * slice_w, 3), dtype= np.uint8)
-        im_padded[:height,:width,:] = im
-
-        mask_padded = np.zeros((n_h * slice_h, n_w * slice_w), dtype= np.uint8)
-        mask_padded[:height,:width] = mask
-
-        im_slices = [im_padded[j*slice_h:(j+1)*slice_h, i*slice_w:(i+1)*slice_w,:].copy() for i in range(n_w) for j in range(n_h)]
-        mask_slices = [mask_padded[j*slice_h:(j+1)*slice_h, i*slice_w:(i+1)*slice_w].copy() for i in range(n_w) for j in range(n_h)]
+        im_slices = []
+        mask_slices = []
+        
+        for y in range(0, height, step):
+            for x in range(0, width, step):
+                patch = im[y:y + slice_h, x:x+slice_w]
+                mask_patch = mask[y:y + slice_h, x:x+slice_w]
+                # Si el parce es menor que el tamnaio esperado, rellenar
+                if patch.shape[0] != slice_h or patch.shape[1] != slice_w:
+                    patch = cv2.copyMakeBorder(patch, 0, slice_h - patch.shape[0], 0, slice_w - patch.shape[1], cv2.BORDER_CONSTANT, value=(0,0,0))
+                    mask_patch = cv2.copyMakeBorder(mask_patch, 0, slice_h - patch.shape[0], 0, slice_w - patch.shape[1], cv2.BORDER_CONSTANT, value=(0,0,0))
+        
+                im_slices.append(patch)
+                mask_slices.append(mask_patch)
 
         for id, im_s in enumerate(im_slices):
             cv2.imwrite(f"{save_dir}/images/{split_name}/{base_name_file}_SLICE_{id}.jpg", im_s)

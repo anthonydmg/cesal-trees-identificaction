@@ -4,3 +4,4 @@ runs/
 *.pt
 prediction-1024px/
 prediction/
+prediction-by-2/

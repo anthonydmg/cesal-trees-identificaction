@@ -4,10 +4,10 @@ import torch
 from ultralytics import YOLO
 import os
 #
-model = YOLO("./yolo11s-finetuned.pt")
+model = YOLO("./yolo11s-finetuned-640px-by-2.pt")
 # 
 PATCH_SIZE = 640
-OVERLAP = 0
+OVERLAP = 10
 
 def split_image_into_patches(image, patch_size = PATCH_SIZE, overlap = OVERLAP):
     h, w, _ = image.shape
@@ -83,8 +83,10 @@ def merge_predictions(results, coordinates, image_size, output_dir = None):
 
 def segment_large_image(image_path, output_dir = None):
     image = cv2.imread(image_path)
+    image = cv2.resize(image, (image.shape[1]//2, image.shape[0]//2), interpolation=cv2.INTER_LANCZOS4)
     # Dividir la imagen en parches
     patches, coordinates, image_size = split_image_into_patches(image, patch_size=PATCH_SIZE, overlap=OVERLAP)
+    
     # Inferencia en cada parche
     results = run_inference_on_patches(patches)
     # Fusionar predicciones
@@ -95,4 +97,4 @@ def segment_large_image(image_path, output_dir = None):
         print(f"Máscara de segmentación guardada en {output_dir}")
 
 segment_large_image(image_path="./data/mavic3m/campo1/DJI_202411071020_004_Crear-ruta-de-zona2/DJI_20241107102712_0085_D.JPG",
-                    output_dir="./prediction")
+                    output_dir="./prediction-by-2")
