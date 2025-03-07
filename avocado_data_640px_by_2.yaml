@@ -1,6 +1,6 @@
 path: ./avocado-yolo-format-640-by-2 # dataset root dir
 train: images/train
 val: images/val
-
+test: images/test
 names:
   0: avocado

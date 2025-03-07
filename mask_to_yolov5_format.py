@@ -47,8 +47,8 @@ def gen_slicing_images_yolo_format(im_paths, save_dir, split_name = "train", sli
         mask = mask.astype(np.uint8) * 255
 
         ## Redimensionar images y mascara
-        im = cv2.resize(im, (im.shape[1]//2, im.shape[0]//2), interpolation=cv2.INTER_LANCZOS4)
-        mask = cv2.resize(mask, (mask.shape[1]//2, mask.shape[0]//2), interpolation=cv2.INTER_LANCZOS4)
+        #im = cv2.resize(im, (im.shape[1]//2, im.shape[0]//2), interpolation=cv2.INTER_LANCZOS4)
+        #mask = cv2.resize(mask, (mask.shape[1]//2, mask.shape[0]//2), interpolation=cv2.INTER_LANCZOS4)
         #print(mask.shape)
         #cv2.namedWindow("Image", cv2.WINDOW_NORMAL)  # Permite redimensionar la ventana
         #cv2.imshow("Image", mask)
@@ -82,17 +82,22 @@ dir_base = "./data/ds-avocado"
 
 images_paths = glob(f"{dir_base}/images/*.JPG")
 
-train_im_paths, val_im_paths = train_test_split(images_paths, test_size=0.25, random_state=42, shuffle=True)
+train_im_paths, test_im_paths = train_test_split(images_paths, test_size=0.20, random_state=42, shuffle=True)
+train_im_paths, val_im_paths = train_test_split(train_im_paths, test_size=0.25, random_state=42, shuffle=True)
 SLICE_SIZE = 640
 
-save_dir = f"./datasets/avocado-yolo-format-{SLICE_SIZE}-by-2"
+save_dir = f"./datasets/avocado-yolo-format-{SLICE_SIZE}"
 
 os.makedirs(f"{save_dir}/masks/train", exist_ok=True)
-os.makedirs(f"{save_dir}/masks/val", exist_ok=True)
 os.makedirs(f"{save_dir}/images/train", exist_ok=True)
-os.makedirs(f"{save_dir}/images/val", exist_ok=True)
 os.makedirs(f"{save_dir}/labels/train", exist_ok= True)
+os.makedirs(f"{save_dir}/masks/val", exist_ok=True)
+os.makedirs(f"{save_dir}/images/val", exist_ok=True)
 os.makedirs(f"{save_dir}/labels/val", exist_ok= True)
+os.makedirs(f"{save_dir}/masks/test", exist_ok=True)
+os.makedirs(f"{save_dir}/images/test", exist_ok=True)
+os.makedirs(f"{save_dir}/labels/test", exist_ok= True)
 
 gen_slicing_images_yolo_format(train_im_paths, save_dir, split_name = "train", slice_w = SLICE_SIZE, slice_h = SLICE_SIZE)
 gen_slicing_images_yolo_format(val_im_paths, save_dir, split_name = "val", slice_w = SLICE_SIZE, slice_h = SLICE_SIZE)
+gen_slicing_images_yolo_format(test_im_paths, save_dir, split_name = "test", slice_w = SLICE_SIZE, slice_h = SLICE_SIZE)

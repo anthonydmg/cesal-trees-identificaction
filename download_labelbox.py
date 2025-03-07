@@ -64,6 +64,6 @@ def download_masks(ndjson_file, output_dir, headers = None):
 if __name__ == "__main__":
     API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbTNjbTh1bjUwOHRoMDd3ODVydTY0YXZ1Iiwib3JnYW5pemF0aW9uSWQiOiJjbTNjbTh1bXUwOHRnMDd3ODc4OGkyMnhhIiwiYXBpS2V5SWQiOiJjbTc1NmgyODAwMW5zMDd5MWVpMTI4ZXJiIiwic2VjcmV0IjoiMDFhZTk2OWI2NmMwNjA3NGExNDMzN2UyMGMyMzYxZDEiLCJpYXQiOjE3Mzk1NjIyOTEsImV4cCI6MTc1NDY4MjI5MX0.sw71_grD_t6-4-uLIqtO2hJWEWzGmXzpFFFjgBB0QrA"
     client = lb.Client(api_key=API_KEY)
-    json_file = "./data/Export  catalog query - 2_19_2025.ndjson"
-    output_dir = "./data/ds-avocado/masks"
+    json_file = "./data/Campo1-data-etiquetada.ndjson"
+    output_dir = "./data/trees-avocado/m3m/campo1/masks"
     download_masks(json_file, output_dir, headers= client.headers)
